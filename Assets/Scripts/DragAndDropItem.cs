@@ -19,6 +19,7 @@ public class DragAndDropItem : MonoBehaviour, IPointerDownHandler, IPointerUpHan
         // Находим скрипт InventorySlot в слоте в иерархии
         oldSlot = transform.GetComponentInParent<InventorySlot>();
     }
+
     public void OnDrag(PointerEventData eventData)
     {
         // Если слот пустой, то мы не выполняем то что ниже return;
@@ -29,6 +30,7 @@ public class DragAndDropItem : MonoBehaviour, IPointerDownHandler, IPointerUpHan
 
     public void OnPointerDown(PointerEventData eventData)
     {
+        print("work");
         if (oldSlot.isEmpty)
             return;
         //Делаем картинку прозрачнее

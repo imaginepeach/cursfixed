@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MultiPlay.unity
     guid: 0f81b9aefcc458441855ff621261c9de
+  - enabled: 1
+    path: Assets/FloatingIslands/FloatingIslands.unity
+    guid: 5330c1bd6903a6f42a3bf4c95cad17de
   m_configObjects: {}
