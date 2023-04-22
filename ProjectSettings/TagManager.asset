@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Arrow
   - Points
+  - Weapon
   layers:
   - Default
   - TransparentFX

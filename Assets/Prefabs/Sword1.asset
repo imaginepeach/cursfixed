@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemPrefab: {fileID: 3388302455371787078, guid: b12dbad8564561f4d9d5f5c7f53601cc, type: 3}
   ItemType: 3
-  icon: {fileID: 21300000, guid: cd2821fc043a958489391bcdcec22b13, type: 3}
+  icon: {fileID: 21300000, guid: af98a7200bf4eb34f93d8d63cd596254, type: 3}
   itemName: Sword1
   MaxAmout: 1
   ItemDescription: 
