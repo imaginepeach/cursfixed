@@ -18,14 +18,19 @@ public class EnemyScript : MonoBehaviour
     void Update()
     {
         heathBar.value = HP;
-        spawns = GameObject.FindGameObjectsWithTag("Respawn");
+        //spawns = GameObject.FindGameObjectsWithTag("Respawn");
     }
 
     public void TakeDamage(float damageAmount)
     {
         HP -= damageAmount * GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerClass>().DamageMult;
 
-        if(HP <= 0)
+        if (HP <= 0)
+        { 
+        Destroy(gameObject);
+        
+        }
+        /*if(HP <= 0)
         {
             GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerClass>().XP += xpGain;
             int randGold = Random.Range(0, 20);
@@ -33,6 +38,6 @@ public class EnemyScript : MonoBehaviour
             int numSpawn = Random.Range(0, spawns.Length);
             HP = 100;
             transform.position = spawns[numSpawn].transform.position;
-        }
+        }*/
     }
 }

@@ -30,7 +30,6 @@ public class DragAndDropItem : MonoBehaviour, IPointerDownHandler, IPointerUpHan
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        print("work");
         if (oldSlot.isEmpty)
             return;
         //Делаем картинку прозрачнее
