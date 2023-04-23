@@ -25,6 +25,16 @@ public class PlayerManager : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.transform.tag == "Artifact")
+        {
+            Global.Count++;
+            Global.ArtifactUpdateCall();
+            other.gameObject.GetComponent<Artifact>().Collected();
+        }
+    }
+
     private void TakeDamage(Collider col)
     {
         if (col.transform.GetComponent<DamageScriptEnemy>().damageCount - transform.gameObject.GetComponent<PlayerClass>().armor > 0)
