@@ -26,17 +26,11 @@ public class EnemyScript : MonoBehaviour
         HP -= damageAmount * GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerClass>().DamageMult;
 
         if (HP <= 0)
-        { 
-            Destroy(gameObject);
-        }
-        /*if(HP <= 0)
         {
             GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerClass>().XP += xpGain;
             int randGold = Random.Range(0, 20);
             GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerClass>().gold += randGold;
-            int numSpawn = Random.Range(0, spawns.Length);
-            HP = 100;
-            transform.position = spawns[numSpawn].transform.position;
-        }*/
+            Destroy(gameObject);
+        }
     }
 }
